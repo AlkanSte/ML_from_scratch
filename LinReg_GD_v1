@@ -71,7 +71,8 @@ def train_test_split(X, y, test_size=0.5, shuffle=True, seed=None):
     return X_train, X_test, y_train, y_test
 
 
-
+#Run the train test plit
+train_test_split(X, y, test_size=0.7, shuffle=True, seed=142):
 
 regressor = LinearRegression(lr=0.05, n_iters=100)
 regressor.fit(X_train, y_train)
