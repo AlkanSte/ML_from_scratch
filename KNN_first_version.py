@@ -70,6 +70,9 @@ def train_test_split(X, y, test_size=0.5, shuffle=True, seed=None):
 iris = datasets.load_iris()
 X, y = iris.data, iris.target
 
+#Run the train test plit
+train_test_split(X, y, test_size=0.7, shuffle=True, seed=142):
+
 k = 3
 clf = KNN(k=k)
 clf.fit(X_train, y_train)
