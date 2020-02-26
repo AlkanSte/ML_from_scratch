@@ -1,5 +1,4 @@
-
-Learn more or give us feedback
+#Data shuffling primarily for train_test_split function
 def shuffle_data(X, y, seed=None):
     """ Random shuffle of the samples in X and y """
     if seed:
@@ -8,6 +7,7 @@ def shuffle_data(X, y, seed=None):
     np.random.shuffle(idx)
     return X[idx], y[idx]
 
+#train_test_split function that mimics sklearn function
 def train_test_split(X, y, test_size=0.5, shuffle=True, seed=None):
     """ Split the data into train and test sets """
     if shuffle:
