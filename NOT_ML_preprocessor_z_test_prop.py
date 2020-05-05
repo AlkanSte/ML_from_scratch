@@ -46,7 +46,7 @@ forum3 = np.concatenate((forum1, forum2))
 #Start testing
 from statsmodels.stats.proportion import proportions_ztest
 count = np.array([np.count_nonzero(basic3 == 1), np.count_nonzero(forum3 == 1)])
-nobs = np.array([8, 6])
+nobs = np.array([len(basic3), len(forum3)])
 stat, pval = proportions_ztest(count, nobs)
 
 print('\n')
