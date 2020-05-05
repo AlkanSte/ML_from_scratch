@@ -40,8 +40,7 @@ def MSE(y_true, y_pred):
 
 from sklearn import datasets
 
-#from linear_regression import LinearRegression
-
+# from linear_regression import LinearRegression
 # from regression import LinearRegression
 
 
